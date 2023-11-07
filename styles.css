@@ -1,0 +1,259 @@
+:root{
+    --bgColor: #202124;
+    --secondBgColor: #171717;
+    --thirdBgColor: #303134;
+    --iconColor: #9AA0A6;
+    --secIconColor: #3c4043;
+}
+:root{
+    box-sizing: border-box;
+    background-color: #202124;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    width: 100%;
+    height: 100%;
+}
+
+header{
+    display: flex;
+    justify-content: flex-end;
+}
+
+body{
+    position: relative;
+}
+nav{
+    justify-content: flex-end;
+    flex-wrap: wrap-reverse;
+    display: flex;
+    padding: 15px;
+    width: 40%;
+}
+
+
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 12px;
+}
+
+.info a{
+    font-size: 14px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#perfil{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+#apps{
+    width: 14px;
+    height: 14px;
+}
+article{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: 100%;
+    height: 35vh;
+}
+
+article img{
+    width: 272px;
+    height: 92px;
+    margin: 0;
+}
+main{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.search{
+    display: flex;
+    width: 582px;
+    height: 46px;
+    border-radius: 24px;
+    border: 1px solid var(--iconColor);
+    margin: 20px;
+}
+
+.search:hover{
+    background-color: var(--secIconColor);
+    box-shadow: 0 0 10px var(--secondBgColor);
+}
+
+input{
+    color: #ffffff;
+    background-color: transparent;
+    margin: auto;
+    width: 500px;
+    border: none;
+}
+input:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+.elementsRight{
+    cursor: pointer;
+    padding: 10px 16px 10px 10px;
+}
+.elementsLeft{
+    padding: 15px;
+}
+.elementsRight img{
+    width: 24px;
+    height: 24px;
+}
+
+.elementsLeft img{
+    width: 16px;
+    height: 16px;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 36px;
+    background-color: var(--thirdBgColor);
+    margin: 10px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+.bar:hover{
+    border: 1px solid var(--secIconColor);
+}
+
+footer{
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+}
+
+.aboveFooter{
+    font-size: 14px;
+    bottom: 0;
+    padding: 15px;
+    border-bottom: 0.2px solid var(--secIconColor);
+    color: var(--iconColor);
+    background-color: var(--secondBgColor);
+}
+
+.rodape{
+    width: 100%;
+    background-color: var(--secondBgColor);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.list{
+    margin: 16px;
+}
+
+.list a{
+    font-size: 14px;
+    padding: 15px;
+    text-decoration: none;
+    color: var(--iconColor);
+}
+
+@media only screen and (max-width: 600px) {
+
+    nav{
+        justify-content: flex-end;
+        flex-wrap: wrap-reverse;
+        display: flex;
+        padding: 15px;
+        width: 90%;
+    }
+    
+    
+    .info{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 12px;
+    }
+    
+    .info a{
+        font-size: 14px;
+        color: #ffffff;
+        text-decoration: none;
+    }
+    
+    #perfil{
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+    }
+    
+    #apps{
+        width: 14px;
+        height: 14px;
+    }
+
+    article img{
+        width: 172px;
+        height: 52px;
+        margin: 0;
+    }
+    .search{
+        display: flex;
+        width: 282px;
+        height: 36px;
+        margin: 25px;
+    }
+    .elementsRight{
+        cursor: pointer;
+        padding: 8px 6px 8px 8px;
+    }
+    .elementsLeft{
+        padding: 12px;
+    }
+    .elementsRight img{
+        width: 20px;
+        height: 20px;
+    }
+    
+    .elementsLeft img{
+        width: 12px;
+        height: 12px;
+    }
+
+    .list{
+        margin: 12px;
+    }
+    
+    .list a{
+        font-size: 14px;
+        padding: 12px;
+        text-decoration: none;
+        color: var(--iconColor);
+    }
+    
+}
